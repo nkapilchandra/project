@@ -3,7 +3,7 @@
 ! It solves for 10 elements each in x- and y-direction
 !=========================================================================================
 
-program solve1
+program ss2d2
   implicit none
 
   real, dimension(0:11,0:11) :: C,D ! D is a matrix declared to store the immediate previous values of C to calculate error
