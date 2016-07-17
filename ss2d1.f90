@@ -3,7 +3,7 @@
 ! First and last elements are used for boundary conditions
 !======================================================================
 
-program solve
+program ss2d1
   implicit none
   real, dimension(0:4,0:4) :: C,D ! D is a matrix declared to store the immediate previous values of C to calculate error
   integer :: i,j,counter
