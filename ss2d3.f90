@@ -4,7 +4,7 @@
 ! It is solved for 0 - n in y-direction whereas 1 - n in x-direction
 ! =====================================================================
 
-program solve2
+program ss2d3
   implicit none
   real, dimension(0:4,-1:4) :: C,D ! D is a second matrix to declared to contain immediate previous values of C while iterating
   integer :: i,j
