@@ -4,7 +4,7 @@
 ! The solution is only for element 1 to size-1
 !==========================================================================
 
-program trans2
+program ts1dim
   implicit none
 
   integer :: i,j,k,counter,size,size2 ! size--LENGTH; size2--TIME
