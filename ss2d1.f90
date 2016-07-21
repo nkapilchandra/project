@@ -83,7 +83,7 @@ counter = counter +1
     end do
   end do
 
-  e = ABS(C(x-1,x-1)-D(x-1,x-1))*100/C(x-1,x-1)
+  e = maxval(ABS(C(1:x,1:y)-D(1:x,1:y)))
 
 end do
 
