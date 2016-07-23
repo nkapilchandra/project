@@ -48,7 +48,7 @@ end do
   counter=0 ! To check the number of steps taken
 
   e=10
-  error = 0.000001
+  error = 0.00000001
 
   do i=0,1+x
     do j=0,1+y
@@ -109,8 +109,31 @@ end do
 
 do i =1,x
   do j = 1,y
-print *,A(i,j)
+print *,C(i,j)
 end do
 end do
+
+open(unit=3,file='data.xls')
+do i =1,x
+  do j=1,y
+    write(3,*) C(i,j)
+  end do
+end do
+close(3)
+
+open(unit=1,file='data1.xls')
+do i = 1,x
+  do j =1,y
+    write(1,*) Fx(i,j)
+  end do
+end do
+close(1)
+open(unit=2,file='data2.xls')
+do i = 1,x
+  do j =1,y
+    write(2,*) Fy(i,j)
+  end do
+end do
+close(2)
 
 end program
