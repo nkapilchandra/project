@@ -14,7 +14,7 @@ program solve1
   read *,lx
   print *,'breadth'
   read *,ly
-  print *,'thermal diffusivity'
+  print *,'thermal conductivity'
   read *,tk
   print *,'number of points in x-direction'
   read *,x
@@ -142,3 +142,4 @@ close(3)
 
 
 end program
+
